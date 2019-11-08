@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>baby website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.nav{
+list-style: none;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+.nav li{
+display : inline;
+}
+.nav a{
+display: inline-block;
+padding: 10px;
+}
+a:link {
+text-decoration: none;
+color:Sienna;
+}
+a:visited {
+color:Sienna;
+}
+ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: white;
+position: -webkit-sticky; 
+position: sticky;
+top: 0;
+font-family: Arial, sans-serif;
+font-size: 20;
+font-weight: bold;
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover {
+background-color: white;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+hr.new1 {
+  border-top: 2px solid sienna;
+}
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 300px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+p {
+font-family: "Century", Century Gothic, serif;
+font-size: 15px;
+}
+div{
+padding-left: 55px;
+}
+#down{
+margin-top: 0;
+  padding-bottom: 5%;
+  }
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: Lavender;
+   color: black;
+   text-align: center;
+}
+</style>
+</head>
+<body style="background-color:white">
+<h1><b><center>TINY TOTS</center></b></h1>
+<ul class="nav">
+<li><a class="active" href="baby_main.html">Home</a></li>
+<li><a href="baby_pro.html">Baby Product</a></li>
+<li><a href="baby_product.html">Baby Clothing</a></li>
+<li><a href="#down">About Us</a></li>
+</ul>
+<hr class="new1">
+<br>
+<section>
+  <img class="mySlides" src="b2.jpg" width="1000" height="400">
+  <img class="mySlides" src="b9.jpg" width="1000" height="400">
+  <img class="mySlides" src="b3.jpg" width="1000" height="400">
+  <img class="mySlides" src="b10.jpg" width="1000" height="400">
+</section>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel,3000);
+}
+
+</script>
+<br>
+<br>
+<h1><b><center>ABOUT US</center></b></h1>
+<hr class="new1">
+<br>
+<div class="row" id="down">
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;<div class="column" style="background-color:Lavender" width="100%">
+    <h1><center>OUR HIVE</center></h1>
+    <p><b>We understand that parenting is a tough gig — and while we can’t make it effortless, we can make it easier by helping parents give their little bees the purest start in life.Our worker bees are committed to delivering the highest quality organic products and using the best materials with a focus on sustainability.</p></b>
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;<div class="column" style="background-color:Lavender"  width="100%">
+    <h1><center>OUR PRODUCTS</center></h1>
+    <p><b>We offer high-quality organic products for babies and kids, including clothing, bedding, and skincare. Our signature 100% organic cotton is known for being heavenly soft and gentle on delicate skin, yet super-durable through endless washes</p></b>
+  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;<div class="column" style="background-color:Lavender" width="100%" >
+    <h1><center>PHILANTHROPHY</center></h1>
+    <p><b>As a company, we try to give back whenever possible. We donate products around the world and volunteer in our community. Whether it’s a shore clean up or a hard work on an urban farm, we work to preserve nature’s gifts — like the little bees that inspire us.</p></b>
+  </div>
+   <img src="o2.png" width="1000" height="200"/> 
+  </div>
+  <div class="footer">
+  <p><b>CONTACT US: tinytots@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;we care for them</b></p>
+</div>
+</body>
+</html>

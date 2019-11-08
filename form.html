@@ -1,0 +1,182 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid sienna;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: sienna;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: pink;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+hr.new1 {
+  border-top: 2px solid sienna;
+}
+.nav{
+list-style: none;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+.nav li{
+display : inline;
+}
+.nav a{
+display: inline-block;
+padding: 10px;
+}
+a:link {
+text-decoration: none;
+color:Sienna;
+}
+a:visited {
+color:Sienna;
+}
+ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: white;
+position: -webkit-sticky; 
+position: sticky;
+top: 0;
+font-family: Arial, sans-serif;
+font-size: 20;
+font-weight: bold;
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover {
+background-color: white;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: Lavender;
+   color: black;
+   text-align: center;
+}
+</style>
+</head>
+<body>
+<ul class="nav">
+<li><a class="active" href="baby_main.html">Home</a></li>
+<li><a href="baby_pro.html">Baby Product</a></li>
+<li><a href="baby_product.html">Baby Clothing</a></li>
+<li><a href="baby_main.html">About Us</a></li>
+</ul>
+<div class="container">
+  <div style="text-align:center">
+    <h2>BUY NOW</h2>
+    <hr class="new1">
+	<br>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="both.jpg" height="500" width="600">
+    </div>
+    <div class="column">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+		<label for="lname">Mail Id</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your mail id..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+		  <option value="usa">INDIA</option>
+		  <option value="usa">GREECE</option>
+		  <option value="usa">ROME</option>
+        </select>
+		<label for="size">Select size</label>
+        <select id="size" name="country">
+          <option value="australia">small</option>
+          <option value="canada">medium</option>
+          <option value="usa">large</option>
+        </select>
+        <label for="subject">ADDRESS</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <label for="size">payment method</label>
+        <select id="size" name="country">
+          <option value="australia">COD</option>
+          <option value="canada">CREDIT CARD</option>
+          <option value="usa">ONLINE PAYMENT</option>
+        </select>
+		<input type="submit" value="Submit" onclick="myFunction()">
+		<script>
+			function myFunction() {
+			alert("your order has been confirmed!");
+}
+</script>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="footer">
+  <p><b>CONTACT US: tinytots@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;we care for them</b></p>
+</div>
+
+</body>
+</html>
